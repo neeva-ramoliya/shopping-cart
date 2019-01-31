@@ -1,1 +1,1 @@
-# shopping-cart
+# react-redux-setup

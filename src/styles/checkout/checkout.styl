@@ -1,0 +1,45 @@
+large = 'screen and (min-width: 1000px)'
+medium = 'screen and (max-width: 999px)'
+.checkout-container
+
+    .content
+        display: flex
+        flex-wrap: wrap
+
+        .total-price-container
+            width: 300px
+            flex-basis: 300px
+            height: 250px
+            border: 1px solid #efefef
+            margin: 0 auto
+
+            .summary
+                height: 190px
+                padding: 15px 15px
+                box-sizing: border-box
+            .order-total
+                height: 60px
+                background-color: #efefef
+                line-height: 60px
+                padding: 0 15px
+            .summary-row
+                display: flex
+
+                .flex-item
+                    flex: 1 1 0
+@media medium 
+    .content
+        flex-direction: column
+    .total-price-container
+        order: 1
+        
+    .item-table
+        order: 2
+        width:100%
+        margin: 0 auto
+
+@media large 
+    .total-price-container
+        position: fixed
+        margin-left: 700px !important
+        
